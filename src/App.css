@@ -1,1 +1,36 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
 
+main {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin: 0px auto;
+  gap: 40px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.todo-container-items {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+button {
+  padding: 20px;
+  height: min-content;
+  background-color: lightgreen;
+  border: 2px solid green;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+}
