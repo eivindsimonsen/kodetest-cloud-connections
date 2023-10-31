@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [todos, setTodos] = useState([]);
 
+  // Hent innhold
   useEffect(() => {
     const getTodos = async () => {
       try {
@@ -24,6 +25,7 @@ function App() {
     getTodos();
   }, []);
 
+  // Send oppdatert innhold
   const postTodos = async () => {
     const bodyData = todos;
 
@@ -39,6 +41,8 @@ function App() {
 
     // data sendes til server, men cors hindrer meg i å se det lokalt?
     const data = await response.json();
+
+    // console.log(response.status);
     console.log(data);
   };
 
